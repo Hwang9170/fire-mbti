@@ -16,12 +16,12 @@ export default function ResultClient() {
 	const params = useSearchParams();
 	const aParam = params.get("a");
 
-	const { scores, top, percents } = useMemo(() => {
+	const { top, percents } = useMemo(() => {
 		const selections = parseAnswersParam(aParam);
 		const s = accumulateScores(selections);
 		const t = resolveTopType(s);
 		const p = toPercentages(s);
-		return { scores: s, top: t, percents: p };
+		return { top: t, percents: p };
 	}, [aParam]);
 
 	const info = TYPE_INFO[top];

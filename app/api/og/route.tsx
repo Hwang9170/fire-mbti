@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { ImageResponse } from "@vercel/og";
 import { NextRequest } from "next/server";
 import { TYPE_INFO, FireType } from "../../lib/types";
@@ -43,18 +42,4 @@ export async function GET(req: NextRequest) {
 			height: 630,
 		}
 	);
-}
-
-export default function Home() {
-  return (
-    <div className="min-h-screen flex items-center justify-center p-8">
-      <main className="max-w-2xl w-full text-center">
-        <h1 className="text-4xl font-semibold mb-4">FIRE MBTI</h1>
-        <p className="text-gray-600 mb-8">8문항으로 알아보는 나의 불꽃 유형</p>
-        <Link href="/quiz" className="inline-block px-6 py-3 bg-black text-white rounded">
-          시작하기
-        </Link>
-      </main>
-    </div>
-  );
 }

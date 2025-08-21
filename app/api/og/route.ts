@@ -1,3 +1,6 @@
+// 이 파일은 JSX를 사용하므로 .tsx 확장자만 사용해야 합니다.
+// 중복 파일이므로 삭제하거나 아래처럼 주석 처리하세요.
+/*
 import { ImageResponse } from "@vercel/og";
 import { NextRequest } from "next/server";
 import { TYPE_INFO, FireType } from "@/app/lib/types";
@@ -42,4 +45,5 @@ export async function GET(req: NextRequest) {
 		}
 	);
 }
+*/
 
